@@ -1,0 +1,42 @@
+.background-full {
+    transition: background-color 0.5s ease;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.light {
+    background-color: #f0f0f0; 
+}
+.dark {
+    background-color: #081B33;
+}
+
+.image-header{
+    transition: all 1s ease;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    object-fit: none;
+    transition: opacity 0.5s ease;
+}
+.image-header.visible, .bg-changer.visible{
+    opacity: 1;
+}
+.image-header.hidden, .bg-changer.visible{
+    opacity: 0;
+}
+
+.bg-changer{
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 1s ease;
+}
